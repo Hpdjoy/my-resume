@@ -44,7 +44,7 @@ background-size: 25% 25%;
 background-repeat: no-repeat;
 animation: l16 2s infinite;
 }
-@keyframes l16{
+@keyframes l16{ 
 0% {background-position: 
   calc(1*100%/3) calc(1*100%/3), calc(2*100%/3) calc(1*100%/3), calc(1*100%/3) calc(2*100%/3), calc(2*100%/3) calc(2*100%/3),
   calc(1*100%/3) calc(1*100%/3), calc(2*100%/3) calc(1*100%/3), calc(1*100%/3) calc(2*100%/3), calc(2*100%/3) calc(2*100%/3),
@@ -79,3 +79,17 @@ animation: l16 2s infinite;
     #main-content {
       display: none;
     }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
