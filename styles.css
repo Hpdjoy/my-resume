@@ -11,6 +11,9 @@
   text-decoration: none;
   color: rgb(91, 91, 91);
 }
+.contact-link:active{
+  color: rgb(255, 0, 0);
+}
 /* Loader styles */
 #loader-container {
       position: fixed;
@@ -85,8 +88,8 @@ animation: l16 2s infinite;
   }
 
   th, td {
-    border: 1px solid #333;
-    padding: 8px;
+   
+   
     text-align: left;
   }
 
