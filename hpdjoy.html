@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hpdjoy | Portfolio & Projects</title>
+  <meta name="description" content="Hi, I'm Harsha (hpdjoy) — a Full Stack Developer passionate about building creative and scalable applications. Explore my work and past projects." />
+
+  <!-- Open Graph (Facebook, LinkedIn, WhatsApp, etc.) -->
+<meta property="og:title" content="Hi, I'm Harsha (hpdjoy) — a Full Stack Developer passionate about building creative and scalable applications. Explore my work and past projects." />
+<meta property="og:description" content="Hi, I'm Harsha (hpdjoy) — a Full Stack Developer passionate about building creative and scalable applications. Explore my work and past projects." />
+<meta property="og:image" content="https://www.google.com/imgres?q=resume%20thumbnail&imgurl=https%3A%2F%2Fe7.pngegg.com%2Fpngimages%2F719%2F77%2Fpng-clipart-curriculum-vitae-job-hunting-resume-employment-cv-text-rectangle-thumbnail.png&imgrefurl=https%3A%2F%2Fwww.pngegg.com%2Fen%2Fsearch%3Fq%3DCurriculum%2Bvitae&docid=EGaybe71t3T6iM&tbnid=lZ0JMFaftMt_-M&vet=12ahUKEwiUhpacirKQAxVc6jgGHQSFGCcQM3oFCIEBEAA..i&w=348&h=348&hcb=2&ved=2ahUKEwiUhpacirKQAxVc6jgGHQSFGCcQM3oFCIEBEAA" />
+<meta property="og:url" content="https://hpdjoy.tech" />
+<meta property="og:type" content="website" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    :root {
+      --bg: #0e141b;
+      --card: #182533;
+      --accent: #6ee7b7;
+      --text: #e9ecef;
+      --muted: #adb5bd;
+      --radius: 14px;
+      --transition: all 0.3s ease;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0e141b, #1b2838);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 800px;
+      width: 100%;
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      backdrop-filter: blur(6px);
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .profile {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .profile img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 2px solid var(--accent);
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    .profile h1 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 2.2rem;
+      color: var(--accent);
+    }
+
+    .profile p {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-top: 0.5rem;
+      line-height: 1.5;
+    }
+
+    section {
+      margin-top: 2.5rem;
+    }
+
+    .section-title {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 1.3rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 10px;
+    }
+
+    .project {
+      background: rgba(255,255,255,0.05);
+      border-radius: var(--radius);
+      padding: 1rem 1.2rem;
+      margin-bottom: 1rem;
+      transition: var(--transition);
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .project:hover {
+      transform: translateY(-3px);
+      background: rgba(255,255,255,0.1);
+    }
+
+    .project-icon {
+      font-size: 1.5rem;
+      color: var(--accent);
+    }
+
+    .project-content h3 {
+      font-weight: 600;
+      font-size: 1.05rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .project-content p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .project a {
+      color: var(--accent);
+      font-size: 0.85rem;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    .experience {
+      background: rgba(255,255,255,0.05);
+      border-radius: var(--radius);
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .experience h4 {
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--accent);
+      margin-bottom: 0.3rem;
+    }
+
+    .experience p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      margin-top: 1rem;
+    }
+
+    .social-links a {
+      color: var(--text);
+      font-size: 1.2rem;
+      transition: var(--transition);
+    }
+
+    .social-links a:hover {
+      color: var(--accent);
+      transform: translateY(-3px);
+    }
+
+    @media (max-width: 600px) {
+      .container { padding: 1.5rem; }
+      .profile h1 { font-size: 1.8rem; }
+      .section-title { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+      <img src="https://pbs.twimg.com/profile_images/1571484738644480000/Aa8Uy2HX_400x400.jpg" alt="Harsha (hpdjoy)">
+      <h1>hpdjoy</h1>
+      <p>Full Stack Developer passionate about building innovative web apps and IoT solutions. Experienced with React, Firebase, Node.js, and Embedded Systems.</p>
+    </div>
+
+    <section>
+      <h2 class="section-title">Featured Projects</h2>
+
+      <div class="project">
+        <div class="project-icon">💬</div>
+        <div class="project-content">
+          <h3>ChatWat</h3>
+          <p>Real-time chat app with modern UI and Firebase backend.</p>
+          <a href="https://chat-wat.hpdjoy.tech" target="_blank">Visit Project →</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-icon">🌾</div>
+        <div class="project-content">
+          <h3>Agrion</h3>
+          <p>Smart agriculture dashboard with IoT automation and analytics.</p>
+          <a href="https://agrion.hpdjoy.tech" target="_blank">Visit Project →</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-icon">🪑</div>
+        <div class="project-content">
+          <h3>GCraft Furniture</h3>
+          <p>Elegant furniture e-commerce platform built with React and Stripe.</p>
+          <a href="https://gcraftfurniture.hpdjoy.tech" target="_blank">Visit Project →</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-icon">🧑‍💼</div>
+        <div class="project-content">
+          <h3>JobSathi</h3>
+          <p>Career portal connecting students and companies with smart filters.</p>
+          <a href="https://jobsathi.hpdjoy.tech" target="_blank">Visit Project →</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Previous Work & Highlights</h2>
+
+      <div class="experience">
+        <h4>Smart Agriculture System</h4>
+        <p>Developed an IoT-based crop monitoring and automation system using ESP32, Firebase, and React. Controlled actuators via real-time data and crop thresholds.</p>
+      </div>
+
+      <div class="experience">
+        <h4>Interactive Resume Platform</h4>
+        <p>Designed a responsive personal resume site integrating skill visualization, interactive UI, and downloadable content.</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 hpdjoy | Built with ❤️ using HTML & CSS</p>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/hpdjoy" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/hpdjoy" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://instagram.com/hpdjoy" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:hello@hpdjoy.tech"><i class="fas fa-envelope"></i></a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
